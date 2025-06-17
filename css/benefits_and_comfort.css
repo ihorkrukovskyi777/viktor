@@ -1,0 +1,106 @@
+/*benefits_and_comfort*/
+.benefits_and_comfort{
+    padding: 90px 0;
+    position: relative;
+    overflow: hidden;
+}
+.benefits_and_comfort .bg_attach{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+}
+.benefits_and_comfort .bg_attach.mobile{
+    bottom: auto;
+    /*top: 555px;*/
+    top: 148vw;
+}
+.benefits_and_comfort .container{
+    max-width: 1360px;
+    position: relative;
+}
+.benefits_and_comfort h2{
+    font-size: 40px;
+}
+.benefits_and_comfort .wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1.17fr;
+    grid-gap: 40px;
+    align-items: center;
+    margin-top: 40px;
+}
+.benefits_and_comfort .text_block ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.benefits_and_comfort .text_block ul li{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 36px;
+}
+.benefits_and_comfort .text_block ul li:last-child{
+    margin-bottom: 0;
+}
+.benefits_and_comfort .text_block ul li svg{
+    flex-shrink: 0;
+}
+.benefits_and_comfort .images_block{
+    display: grid;
+    grid-template-columns: 1fr 1.68fr;
+    grid-gap: 38px;
+}
+.benefits_and_comfort .images_block img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@media(min-width:768px){
+    .benefits_and_comfort .bg_attach.mobile{
+        display: none;
+    }
+    .benefits_and_comfort .text_block ul li span span {
+        display: none;
+    }
+}
+@media(max-width:991px){
+    .benefits_and_comfort .wrapper {
+        grid-template-columns: 100%;
+        grid-gap: 75px;
+        margin-top: 30px;
+    }
+    .benefits_and_comfort h2 {
+        text-align: center;
+    }
+    .benefits_and_comfort .text_block{
+        order: 1;
+    }
+    .benefits_and_comfort .images_block{
+        /*margin: 0 -80px;*/
+    }
+}
+@media(max-width: 767px){
+    .benefits_and_comfort {
+        padding: 75px 0 30px;
+    }
+    .benefits_and_comfort .bg_attach.desktop{
+        display: none;
+    }
+    .benefits_and_comfort h2 {
+        font-size: 26px;
+    }
+    .benefits_and_comfort .text_block ul svg {
+        width: 24px;
+        height: 24px;
+    }
+    .benefits_and_comfort .text_block ul li:not(:last-child) br {
+        display: none;
+    }
+    .benefits_and_comfort .images_block{
+        grid-gap: 20px;
+        margin: 0 -16px;
+    }
+}

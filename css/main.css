@@ -1,0 +1,137 @@
+@charset "UTF-8";
+@import url('header.css');
+@import url('banner.css');
+@import url('benefits_and_comfort.css');
+/* CSS Document */
+/*==============================================================
+	Google Fonts
+==============================================================*/
+@import url('https://fonts.googleapis.com/css?family=Nunito:300,400,400i,600,600i,700,700i&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Fugaz+One&display=swap');
+
+/*==============================================================
+	Common Styles Initials
+==============================================================*/
+
+html {
+	-webkit-text-size-adjust: none; /* Prevent font scaling in landscape */
+	width: 100%;
+	height: 100%;
+	-webkit-font-smoothing: antialiased;
+	-moz-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+    background-color: #000;
+}
+
+input[type="submit"] {
+	-webkit-appearance: none;
+	-webkit-border-radius: 0;
+	border-radius: 0;
+}
+
+*, *:after, *:before {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: 'Nunito', sans-serif;
+	-webkit-font-smoothing: antialiased;
+	width: 100%;
+	min-height: 100%;
+	color: #727384;
+	background: #ffffff;
+}
+.container{
+    width: 100%;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    max-width: 1170px;
+}
+a {
+	outline: none;
+	text-decoration: none;
+	color: #555;
+}
+
+a:hover, a:focus{
+	outline: none;
+	text-decoration: none;
+}
+
+input, textarea, select {
+	outline: none;
+	resize: none;
+	font-family: 'Nunito', sans-serif;
+}
+
+a, input, button{
+	outline:none !important;
+}
+
+ button::-moz-focus-inner {
+ 	border: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+	padding: 0;
+	font-weight: 400;
+	color: #434343;
+	font-family: 'Fugaz One', cursive;
+}
+
+img {
+	border: 0;
+	vertical-align: top;
+	max-width: 100%;
+	height: auto;
+}
+
+ul, ol {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+p {
+	margin: 0 0 15px 0;
+	padding: 0;
+}
+
+.shape{
+	position: absolute;
+	bottom: -10px;
+	left: 0;
+    z-index: 99;
+	width: 100%;
+}
+.shape svg{
+	width: 100%;
+}
+.banner-section {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+.banner-section .swiper{
+    width: 100%;
+    height: 100%;
+}
+.banner-section .swiper-slide{
+    width: 100%;
+    height: 100%;
+}
+.banner-section .swiper-slide img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.banner-section .swiper-pagination{
+    position: absolute;
+    bottom: 0;
+}
